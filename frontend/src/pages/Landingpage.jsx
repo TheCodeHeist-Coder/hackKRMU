@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import WhyThis from '../components/WhyThis';
 import HowitWorks from '../components/HowitWorks';
+import Navbar from '../components/Navbar';
 
 const Landingpage = () => {
 
@@ -19,9 +20,14 @@ const Landingpage = () => {
 
     return (
 
+   <div> 
+        <div className='sticky top-0'>
+        <Navbar />
+        </div>
 
+        <div className='min-h-screen max-w-7xl m-auto w-full py-15 font-main'>
 
-        <div className='min-h-screen max-w-7xl m-auto w-full py-15 bg-gray-100 font-main'>
+           
 
             <div className="badge font-main flex justify-center items-center">
                 <h1 className='rounded-full border border-green-400 py-2 tracking-wider px-4'> POSH-Compliant Platform — India's Workplace Safety </h1>
@@ -95,6 +101,7 @@ const Landingpage = () => {
             <WhyThis />
 
             <HowitWorks />
+            </div>
 
         </div>
     )
