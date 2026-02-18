@@ -17,7 +17,7 @@ export default function Navbar() {
         {/* Navbar Main Row */}
         <div className="flex justify-between items-center h-16">
           
-          
+          {/* Logo */}
           <div className="flex items-center gap-2">
             <img className="w-8 h-8" src="/logo .png" alt="" />
             <h1 className="text-xl font-bold tracking-wide">
@@ -27,8 +27,8 @@ export default function Navbar() {
 
         
           <div className="hidden md:flex items-center gap-8 font-medium">
-            <a href="#report" className="hover:text-purple-300 transition">
-              Report
+            <a href="#report" className="hover:text-gray-950 transition">
+              Your Rights
             </a>
             <a href="#evidence" className="hover:text-purple-300 transition">
               Evidence Vault
@@ -43,8 +43,8 @@ export default function Navbar() {
 
           
           <div className="hidden md:block">
-            <button className="bg-white text-blue-900 px-4 py-2 rounded-xl font-semibold shadow hover:bg-purple-200 transition">
-              Quick Hide
+            <button className="bg-linear-to-t from-green-400 to-green-600 py-3 px-5 tracking-wider rounded-full font-normal shadow hover:bg-purple-200 transition">
+              Report Safely
             </button>
           </div>
 
@@ -87,9 +87,9 @@ export default function Navbar() {
               Dashboard
             </a>
 
-           
-            <button className="w-full bg-linear-to-t from-green-400 to-green-700 bg- py-2 rounded-xl font-semibold shadow  transition">
-              Report Safely
+            {/* Quick Hide Button (Mobile) */}
+            <button className="w-full bg-white text-blue-900 py-2 rounded-xl font-semibold shadow hover:bg-purple-200 transition">
+              Quick Hide
             </button>
           </div>
         )}
