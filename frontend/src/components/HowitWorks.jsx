@@ -95,30 +95,30 @@ export default function HowitWorks() {
             </div>
 
 
-          <div className="relative flex items-center justify-center px-8 py-12 overflow-hidden">
+            <div className="relative flex items-center justify-center px-8 py-12 overflow-hidden">
 
- 
 
-  {/* Card */}
-  <div className="relative border bg-black border-green-500 rounded-md py-8 px-7 flex items-center gap-7  z-10">
-     {/* Animated Dots Background */}
-  <div className="absolute inset-0 dots-bg"></div>
 
-    <div>
-      <BsFillShieldLockFill className="w-22 h-22 text-green-500" />
-    </div>
+                {/* Card */}
+                <div className="relative border bg-black border-green-500 rounded-md py-8 px-7 flex items-center gap-7  z-10">
+                    {/* Animated Dots Background */}
+                    <div className="absolute inset-0 dots-bg"></div>
 
-    <div className="flex flex-col gap-3">
-      <h3 className="text-2xl tracking-wider text-white font-semibold font-starter">
-        Zero knowledge Architecture
-      </h3>
+                    <div>
+                        <BsFillShieldLockFill className="w-22 h-22 text-green-500" />
+                    </div>
 
-      <p className="text-md tracking-wide text-gray-50">
-        SafeDesk is architecturally designed so that even system administrators cannot link a complaint to a specific employee. Your identity is not just hidden — it is technically impossible to recover. End-to-end encryption, metadata stripping, and role-based access controls ensure absolute confidentiality.
-      </p>
-    </div>
-  </div>
-</div>
+                    <div className="flex flex-col gap-3">
+                        <h3 className="text-2xl tracking-wider text-white font-semibold font-starter">
+                            Zero knowledge Architecture
+                        </h3>
+
+                        <p className="text-md tracking-wide text-gray-50">
+                            SafeDesk is architecturally designed so that even system administrators cannot link a complaint to a specific employee. Your identity is not just hidden — it is technically impossible to recover. End-to-end encryption, metadata stripping, and role-based access controls ensure absolute confidentiality.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
         </section>
     );

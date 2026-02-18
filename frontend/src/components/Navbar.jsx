@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full relative  text-gray-900 font-main ">
+    <nav className="w-full relative max-w-7xl m-auto  text-gray-900 font-main ">
 
    <div className="absolute bottom-0 inset-x-0 bg-linear-to-r from-transparent via-green-400 to-transparent h-px ">
 
@@ -19,16 +19,16 @@ export default function Navbar() {
           
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <FaShieldAlt className="text-purple-300 text-2xl" />
+            <img className="w-8 h-8" src="/logo .png" alt="" />
             <h1 className="text-xl font-bold tracking-wide">
               SafeDesk
             </h1>
           </div>
 
-          {/* Desktop Links */}
+        
           <div className="hidden md:flex items-center gap-8 font-medium">
-            <a href="#report" className="hover:text-purple-300 transition">
-              Report
+            <a href="#report" className="hover:text-gray-950 transition">
+              Your Rights
             </a>
             <a href="#evidence" className="hover:text-purple-300 transition">
               Evidence Vault
@@ -41,18 +41,18 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Quick Hide Button (Desktop) */}
+          
           <div className="hidden md:block">
-            <button className="bg-white text-blue-900 px-4 py-2 rounded-xl font-semibold shadow hover:bg-purple-200 transition">
-              Quick Hide
+            <button className="bg-linear-to-t from-green-400 to-green-600 py-3 px-5 tracking-wider rounded-full font-normal shadow hover:bg-purple-200 transition">
+              Report Safely
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
+       
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-3xl text-white"
+              className="text-3xl text-gray-950"
             >
               {isOpen ? <HiX /> : <HiMenuAlt3 />}
             </button>
@@ -72,7 +72,7 @@ export default function Navbar() {
               href="#evidence"
               className="block hover:text-purple-300 transition"
             >
-              Evidence Vault
+            Your Rights 
             </a>
             <a
               href="#chat"
