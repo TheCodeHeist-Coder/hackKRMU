@@ -1,5 +1,25 @@
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 
 @import "tailwindcss";
+
+
+@theme {
+
+  --font-main: "Zalando Sans Expanded", sans-serif;
+  --font-special: "Metal Mania", system-ui;
+  --font-number: "Metal Mania", system-ui;
+    --font-starter: "Zalando Sans Expanded", sans-serif;
+  
+
+
+ 
+}
+
+
+.rotate-span {
+  display: inline-block; /* Essential for the transform property to work correctly */
+  transform: rotate(3deg); /* Rotates the element 45 degrees clockwise */
+}
